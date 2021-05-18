@@ -1,0 +1,162 @@
+body{
+	font-family: 'chivo';
+	color: #FFFFFF;
+	background:linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2dd7);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+.topbar {
+	overflow: hidden;
+	position: fixed;
+	top: 10px;
+	margin-right: 10px;
+	width: 100%;
+}
+
+.travelled {
+	text-align: left;
+	float: right;
+	margin-right: 25px;
+}
+
+.day {
+	text-align: left;
+	float: right;
+	margin-right: 60px;
+}
+
+.javaship{
+	margin-left: 20px;	
+}
+
+.topbar h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.topbar p {
+margin-bottom: 0;
+font-size: 15px;
+}
+
+
+
+/* Style the tab */
+.information {
+	max-width: 80%;
+	margin: auto;
+}
+
+.tab {
+	overflow: hidden;
+	/* border: 1px solid #ccc; */
+	background-color: #13043a;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+	background-color: inherit;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+	background-color: #b2351f;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+	background-color: rgb(209, 60, 33)
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #13043a;
+	border-top: none;
+	background-color: #13043a6e;
+  }
+
+  #form {
+	width: 300px;
+	text-align: center;
+  }
+  
+  
+#foodStorage{
+		position: relative;
+		height:380px;
+		width:100%;
+		display:flex;
+		overflow: hidden;
+		padding: 30px;
+}
+
+  #kroket, #cake, #pizza, #sushi{
+	width: 20%;
+	background-color: rgba(255, 166, 0, 0.185);
+	/* border: 2px solid rgb(243, 247, 9); */
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center; 
+	margin-right: 20px;
+  }
+
+  .foodImg{
+	width: 100%;
+	height: 28vh;
+  }
+  
+  .foodName{
+	width: 100%;
+	font-size: 10px;
+  }
+
+  .ateBtn {
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	background-color: #c99c07; 
+	color: white;
+  }
+
+  .btn{
+	border-radius: 5px;
+	border: none;
+	padding: 8px;
+	background-color: #dfbe03; 
+	color: white; 
+  }
+
+  #starving {
+	display: none;
+  }
+
+ .starve{
+	 font-size: large;
+ }
+#outputG, #eta{
+	color:rgb(252, 110, 92);
+	font-size: 25px;
+}
+
+.marsImg{
+	margin:50px auto;
+	width:50%;
+}
+ 
+.changeAngle{
+	width:100%;
+}

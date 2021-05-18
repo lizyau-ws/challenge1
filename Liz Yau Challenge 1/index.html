@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaSHIP System</title>
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+		<script src="scripts/main.js" defer></script>
+	</head>
+
+	<body>	
+				<div class="javaship">
+					<h1> JavaSHIP</h1>
+					
+						<div class="topbar">
+							<div class="day">
+								<h3>Date: </h3>
+								<p><span id="datetime"></span></p>
+							</div>
+							<div class="travelled">
+								<h3> Travelled Days:</h3>
+								<p> Day 13 </p>
+							</div>
+						</div>
+
+				</div>
+
+				<div class="information">
+					<div class="tab">
+						<button class="tablinks" onclick="dataInfo(event, 'Parameter')">Parameter</button>
+						<button class="tablinks" onclick="dataInfo(event, 'Environment')">Environment</button>
+						<button class="tablinks" onclick="dataInfo(event, 'Supplies')">Supplies</button>
+						<button class="tablinks" onclick="dataInfo(event, 'Converter')">Converter</button>
+					</div>
+				  
+					<div id="Parameter" class="tabcontent">
+						<h3>Speed Control</h3>
+						<p id ="speedRemind">Increase Speed to start the engine!</p>
+						<form class=speedControl>
+							<input class ="btn" type="button" onclick="reduceSpeed()" value="Reduce Speed" />
+							<input type="number" id="speedNum" value="500" min="0"/>
+							<input  class ="btn" type="button" onclick="increaseSpeed()" value="Increase Speed" />
+						</form>
+
+						<h3>Estimated Time of Arrival</h3>
+						<p id= "eta"></p>
+					</div>
+	  
+				  
+					<div id="Environment" class="tabcontent">
+						<h3>Mars Situation</h3> 
+
+						<div class="marsImg">
+							<div class="img-box">
+								<img src="images/a.jpg" class="changeAngle">
+							</div>
+							<button class="btn" onclick="prev()">Prev</button>
+							<button class="btn" onclick="next()">Next</button>
+						</div>
+					</div>
+				
+				  
+					<div id="Supplies" class="tabcontent">
+						<h3>Food</h3>
+
+						<div id="foodStorage">
+							<div id="kroket">
+							<img class="foodImg" src= "images/kroket.jpg">
+								<div><h5 id="foodName">Kroket</h5>
+								<button class="ateBtn" onclick="ateKroket()">Ate</button>
+								</div>
+							</div>
+
+							<div id="cake">
+							<img class="foodImg" src= "images/cake.jpg">
+								<div><h5 id="foodName">Cake</h5>
+								<button class="ateBtn" onclick="ateCake()">Ate</button>
+								</div>
+							</div>
+
+							<div id="pizza">
+							<img class="foodImg" src= "images/pizza.jpg">
+								<div><h5 id="foodName">Pizza</h5>
+								<button class="ateBtn" onclick="atePizza()">Ate</button>
+								</div>
+							</div>
+
+							<div id="sushi">
+							<img class="foodImg" src= "images/sushi.jpg">
+								<div><h5 id="foodName">Sushi</h5>
+								<button class="ateBtn" onclick="ateSushi()">Ate</button>
+								</div>
+							</div>
+
+							<div id="starving">
+								<p>oh no you are starving</p>
+							  </div>
+
+						</div>
+					</div>
+
+				  
+					<div id="Converter" class="tabcontent">
+						<h3>Gravity Converter</h3>
+						<p>Type a value below to convert acceleration of free fall on Mars:</p>
+						<p><label>Gravitation [g] </label>
+						<input id="inputG" type="number" placeholder="[g]" oninput="accConverter(this.value)" onchange="accConverter(this.value)">
+						</p>
+						<p>Mile/second² [mi/s²]: <span id="outputG"></span></p>
+					</div>
+
+				</div>
+				
+
+			
+
+
+	</body>
+</html>
